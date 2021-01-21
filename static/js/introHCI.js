@@ -11,10 +11,10 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("The button is a success!");
+		$("#testjs").text("Please wait...");
+		$(".jumbotron p").addClass("active");
 	});
 	$("a.thumbnail").click(projectClick);
-	$("#testjs").text("Please wait...");
-	$(".jumbotron p").addClass("active");
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 }
